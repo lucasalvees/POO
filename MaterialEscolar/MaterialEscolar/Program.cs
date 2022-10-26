@@ -26,5 +26,9 @@ internal class Program
         apontador.Esvaziar();
         apontador.Apontar();
         apontador.Exibir();
+
+        Caderno caderno = new Caderno("Tilibra");
+        caderno.ArrancarFolha();
+        caderno.Exibir();
     }
 }
