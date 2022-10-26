@@ -30,5 +30,9 @@ internal class Program
         Caderno caderno = new Caderno("Tilibra");
         caderno.ArrancarFolha();
         caderno.Exibir();
+
+        Borracha borracha = new Borracha("Branca", "Mercur");
+        borracha.Apagar();
+        borracha.Exibir();
     }
 }
