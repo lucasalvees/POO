@@ -68,8 +68,8 @@
 		{
 			if (Furado || Estourado)
 				return;
-	
-			Rotacao += _rotacao;
+
+            Rotacao += _rotacao;
 			GastarBorracha(_rotacao / 100.0);
 		}
 
@@ -77,6 +77,9 @@
 		{
 			Rotacao -= _abatimento;
 			GastarBorracha(_abatimento / 100.0);
+
+			if (rotacao < 0)
+				Rotacao = 0;
 		}
 
 		public void Furar()
